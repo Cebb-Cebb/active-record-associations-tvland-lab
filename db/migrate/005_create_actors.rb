@@ -5,5 +5,5 @@ class CreateActors < ActiveRecord::Migration[5.1]
         t.string :last_name
       end
     end
-  end
+  end   
   

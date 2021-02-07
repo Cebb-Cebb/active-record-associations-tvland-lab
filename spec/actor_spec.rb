@@ -59,6 +59,13 @@ describe "Actor" do
     khaleesi.show = got
     khaleesi.save
 
+    peter = Actor.new(:first_name => "Peter", :last_name => "Dinklage")
+        # tyrion = Character.new(:name => "Tyrion Lannister")
+        # tyrion.actor = peter
+        # thrones = Show.new(:name => "Game of Thrones")
+        # tyrion.show = thrones
+        # tyrion.save 
+        
     khaleesi.reload
     expect(emilia.list_roles).to include("Khaleesi - Game of Thrones")
   end
